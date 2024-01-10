@@ -15,7 +15,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
