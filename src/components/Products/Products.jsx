@@ -4,6 +4,7 @@ import Img2 from "../../assets/women/women2.jpg";
 import Img3 from "../../assets/women/women3.jpg";
 import Img4 from "../../assets/women/women4.jpg";
 import { FaStar } from "react-icons/fa6";
+import Button from "../ui/button";
 
 const ProductsData = [
   {
@@ -94,9 +95,10 @@ const Products = () => {
           </div>
           {/* view all button */}
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md">
-              View All Button
-            </button>
+            <Button
+              className="mt-10 hover:scale-105 duration-300"
+              text="View All Button"
+            />
           </div>
         </div>
       </div>

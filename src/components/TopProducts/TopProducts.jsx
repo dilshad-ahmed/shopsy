@@ -4,6 +4,8 @@ import Img2 from "../../assets/shirt/shirt2.png";
 import Img3 from "../../assets/shirt/shirt3.png";
 import { FaStar } from "react-icons/fa";
 
+import Button from "../ui/button";
+
 const ProductsData = [
   {
     id: 1,
@@ -72,12 +74,12 @@ const TopProducts = ({ handleOrderPopup }) => {
                 <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                   {data.description}
                 </p>
-                <button
-                  className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
+                <Button
+                  className="mt-4 hover:scale-105 duration-300 group-hover:bg-white group-hover:text-primary"
+                  text="Order Now"
                   onClick={handleOrderPopup}
-                >
-                  Order Now
-                </button>
+                  rounded
+                />
               </div>
             </div>
           ))}
