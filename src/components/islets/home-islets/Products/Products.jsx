@@ -1,10 +1,10 @@
 import React from "react";
-import Img1 from "../../assets/women/women.png";
-import Img2 from "../../assets/women/women2.jpg";
-import Img3 from "../../assets/women/women3.jpg";
-import Img4 from "../../assets/women/women4.jpg";
+import Img1 from "../../../../assets/women/women.png";
+import Img2 from "../../../../assets/women/women2.jpg";
+import Img3 from "../../../../assets/women/women3.jpg";
+import Img4 from "../../../../assets/women/women4.jpg";
 import { FaStar } from "react-icons/fa6";
-import Button from "../ui/button";
+import Button from "../../../ui/button";
 
 const ProductsData = [
   {

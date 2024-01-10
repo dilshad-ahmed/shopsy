@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Navbar from "../components/Navbar/Navbar";
-import Hero from "../components/Hero/Hero";
-import Products from "../components/Products/Products";
-import TopProducts from "../components/TopProducts/TopProducts";
-import Banner from "../components/Banner/Banner";
-import Subscribe from "../components/Subscribe/Subscribe";
-import Testimonials from "../components/Testimonials/Testimonials";
-import Footer from "../components/Footer/Footer";
-import Popup from "../components/Popup/Popup";
+import Navbar from "../components/islets/home-islets/Navbar/Navbar";
+import Hero from "../components/islets/home-islets/Hero/Hero";
+import Products from "../components/islets/home-islets/Products/Products";
+import TopProducts from "../components/islets/home-islets/TopProducts/TopProducts";
+import Banner from "../components/islets/home-islets/Banner/Banner";
+import Subscribe from "../components/islets/home-islets/Subscribe/Subscribe";
+import Testimonials from "../components/islets/home-islets/Testimonials/Testimonials";
+import Footer from "../components/islets/home-islets/Footer/Footer";
+import Popup from "../components/islets/home-islets/Popup/Popup";
 
 export default function Home() {
   const [orderPopup, setOrderPopup] = useState(false);
