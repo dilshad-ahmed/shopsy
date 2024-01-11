@@ -51,6 +51,45 @@ const DropdownLinks = [
   },
 ];
 
+
+
+
+
+
+// shop by category
+
+const Categories = [
+  {
+    id: 1,
+    name: "Electronics",
+    link: "/categories/electronics",
+  },
+  {
+    id: 2,
+    name: "Clothing",
+    link: "/categories/clothing",
+  },
+  {
+    id: 3,
+    name: "Books",
+    link: "/categories/books",
+  },
+  {
+    id: 4,
+    name: "Home & Kitchen",
+    link: "/categories/home-kitchen",
+  },
+  {
+    id: 5,
+    name: "Sports & Outdoors",
+    link: "/categories/sports-outdoors",
+  },
+  // Add more categories as needed
+];
+
+
+
+
 const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -106,6 +145,31 @@ const Navbar = ({ handleOrderPopup }) => {
               </a>
             </li>
           ))}
+               {/* Shop by Category Dropdown */}
+               <li className="group relative cursor-pointer">
+               <a href="#" className="flex items-center gap-[2px] py-2">
+                 Shop by Category
+                 <span>
+                   <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+                 </span>
+               </a>
+               <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md">
+                 <ul>
+                   {Categories.map((category) => (
+                     <li key={category.id}>
+                       <a
+                         href={category.link}
+                         className="inline-block w-full rounded-md p-2 hover:bg-primary/20 "
+                       >
+                         {category.name}
+                       </a>
+                     </li>
+                   ))}
+                 </ul>
+               </div>
+             </li>
+
+
           {/* Simple Dropdown and Links */}
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
